@@ -353,4 +353,29 @@ while i < 6:
 else:
     print("while循环正常结束")
 
+# end 关键字
+for i in range(5):
+    print(i, end=' ')
+print(11)
+
+# 函数
+def my_func(x,y):
+    return x+y
+print(my_func(2,3))
+
+# 推导式
+# 列表推导式
+my_list = [x for x in range(10) if x % 2 == 0]
+print(my_list)
+# 字典推导式
+names = ['Bob','Tom','alice','Jerry','Wendy','Smith']
+my_dict = {name: len(name) for name in names}
+print(my_dict)
+# 集合推导式
+my_set = {x for x in range(10) if x % 2 == 0}
+print(my_set)
+# 元组推导式
+my_tuple = tuple(x for x in range(10) if x % 2 == 0)
+print(my_tuple)
+
 

@@ -279,6 +279,43 @@ my_dict.pop('age')
 print(my_dict)
 my_dict.clear()
 print(my_dict)
+emptyDict = dict()
 
+# 打印字典
+print(emptyDict)
 
+# 查看字典的数量
+print("Length:", len(emptyDict))
 
+# 查看类型
+print(type(emptyDict))
+tinydict = {'Name': 'Runoob', 'Age': 7}
+
+print("tinydict['Age']: ", tinydict['Age'])
+# 集合 set 无序不重复
+my_set = {1, 2, 3, 4, 5}
+print(my_set)
+print(type(my_set))
+my_set.add(2)
+print(my_set)
+my_set.remove(2)
+print(my_set)
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)
+basket.discard('orange') # 删除指定元素
+print(basket)
+basket.pop() # 删除第一个元素
+print(basket)
+a = {1, 2, 3}
+a.pop()
+print(a)
+print(len(a))
+a = set('abracadabra')
+b = set('alacazam')
+print(a)
+print(b)
+print(a - b) # 差集
+print(b - a)
+print(a | b) # 并集
+print(a & b) # 交集
+print(a ^ b) # 异或

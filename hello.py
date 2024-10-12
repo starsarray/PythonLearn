@@ -319,3 +319,38 @@ print(b - a)
 print(a | b) # 并集
 print(a & b) # 交集
 print(a ^ b) # 异或
+
+# 条件语句
+x = 2
+y = 3
+if x < 0:
+    if y < 0:
+        print('negative')
+elif x == 0:
+    print('zero')
+else:
+    if y < 0:
+        print('negative')
+    elif y == 0:
+        print('zero')
+    else:
+        print('positive')
+    print("退出 if 语句块")
+
+# 循环语句
+fruits = ['apple', 'banana', 'orange']
+for fruit in fruits:
+    print(fruit)
+    if fruit == 'banana':
+        break
+else:
+    print("for循环正常结束")
+for i in range(5):
+    print(i)
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("while循环正常结束")
+
+

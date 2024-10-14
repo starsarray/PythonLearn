@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="浅学习循环语句">
+    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="浅学习推导式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello.py" afterDir="false" />
     </list>
@@ -120,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728738696451</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="浅学习推导式">
+      <option name="closed" value="true" />
+      <created>1728739485898</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728739485898</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +151,8 @@
     <MESSAGE value="浅学习列表、元祖、字典" />
     <MESSAGE value="浅学习集合" />
     <MESSAGE value="浅学习循环语句" />
-    <option name="LAST_COMMIT_MESSAGE" value="浅学习循环语句" />
+    <MESSAGE value="浅学习推导式" />
+    <option name="LAST_COMMIT_MESSAGE" value="浅学习推导式" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hello$hello.coverage" NAME="hello 覆盖结果" MODIFIED="1728569827862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

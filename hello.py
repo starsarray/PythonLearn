@@ -378,4 +378,59 @@ print(my_set)
 my_tuple = tuple(x for x in range(10) if x % 2 == 0)
 print(my_tuple)
 
+# 迭代器 iter() 和 next()
+my_list = [1, 2, 3, 4, 5]
+my_iter = iter(my_list)
+print(my_iter)
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+# print(next(my_iter)) # 迭代器已经到达末尾，抛出 StopIteration 异常
+# 创建迭代器
+class MyNumbers:
+    def __iter__(self):
+        self.a = 1
+        return self
+
+    def __next__(self):
+        if self.a <= 5:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+myclass = MyNumbers()
+myiter = iter(myclass)
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
+# 生成器 generator
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+
+# 创建生成器对象
+print("生成器")
+generator = countdown(5)
+print(generator)
+# 通过迭代生成器获取值
+print(next(generator))  # 输出: 5
+print(next(generator))  # 输出: 4
+print(next(generator))  # 输出: 3
+print(generator)
+
+# 使用 for 循环迭代生成器
+for value in generator:
+    print(value)  # 输出: 2 1
+
+
+
+
 

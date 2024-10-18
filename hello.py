@@ -429,8 +429,19 @@ print(generator)
 # 使用 for 循环迭代生成器
 for value in generator:
     print(value)  # 输出: 2 1
+print("生成器结束",end="")
+print("生成器结束",end="")
 
+# 不可变类型验证
+a = 10
+print(a,' ',id(a))
+a = a + 10
+print(a,' ',id(a))
 
-
-
-
+# 比较大小
+# print(cmp(1,2))
+print((1 < 2) - (1 > 2))
+print((3 < 2) - (3 > 2))
+print((2 < 2) - (2 > 2))
+print(False - True)
+print(True - False)

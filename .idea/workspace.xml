@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="浅学习迭代器、生成式、协程、装饰器、元类、上下文管理器、异常处理、正则表达式、多线程、多进程、网络编程、数据库编程、Web开发、GUI编程、软件工程、机器学习、深度学习、图像处理、数据分析、数据可视化、数据挖掘、人工智能、区块链、云计算、物联网、区块链、区块链、">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_10_10_22_47____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024_10_10_22_47_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="上传笔记">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello.py" afterDir="false" />
@@ -139,7 +137,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728877151345</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="验证不可变类型&#10;数字比较大小">
+      <option name="closed" value="true" />
+      <created>1729260794237</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729260794237</updated>
+    </task>
+    <task id="LOCAL-00009" summary="上传笔记">
+      <option name="closed" value="true" />
+      <created>1729260868651</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729260868651</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +178,9 @@
     <MESSAGE value="浅学习循环语句" />
     <MESSAGE value="浅学习推导式" />
     <MESSAGE value="浅学习迭代器、生成式" />
-    <option name="LAST_COMMIT_MESSAGE" value="浅学习迭代器、生成式" />
+    <MESSAGE value="验证不可变类型&#10;数字比较大小" />
+    <MESSAGE value="上传笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传笔记" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hello$hello.coverage" NAME="hello 覆盖结果" MODIFIED="1728569827862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

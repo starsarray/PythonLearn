@@ -58,6 +58,17 @@ Python3 支持 int、float、bool、complex（复数）
 
 *在 Python2 中是没有布尔型的，它用数字 0 表示 False，用 1 表示 True。*
 
+```py
+math.ceil(4.1) # 返回 5
+math.floor(4.9) # 返回 4
+math.fabs(-10) # 返回10.0 以浮点数形式返回数字的绝对值
+math.log(100,10) #返回2.0
+
+random.choice(range(10)) # 从0到9中随机挑选一个整数
+```
+
+
+
 ### bytes 类型
 bytes 类型是 Python3 中新增的数据类型，它是不可变序列，用于存储二进制数据。
 bytes 类型中的元素是整数值（0 到 255 之间的整数），而不是 Unicode 字符。
@@ -105,4 +116,56 @@ x = b"hello"
 ## 字符串
 
 String（字符串）是Python中最常用的数据类型。字符串可以用单引号（''）或双引号（""）括起来，同时使用反斜杠（\）转义特殊字符。
+### 字符串创建
+
+```py
+# 单行
+s = "Hello, world!"
+s = 'Hello, world!'
+# 多行 并且带格式
+s = '''Hello, 
+world'''
+s = """Hello, 
+world"""
+```
+
+### 索引
+
+![img](https://static.jyshare.com/wp-content/uploads/123456-20200923-1.svg)
+
+### 格式化字符串
+
+- %
+
+```py
+>>> name = 'Runoob'
+>>> 'Hello %s' % name
+'Hello Runoob'
+```
+
+- f-string 是 python3.6 之后版本添加的，称之为字面量格式化字符串
+
+```py
+>>> name = 'Runoob'
+>>> f'Hello {name}'  # 替换变量
+'Hello Runoob'
+>>> f'{1+2}'         # 使用表达式
+'3'
+
+>>> w = {'name': 'Runoob', 'url': 'www.runoob.com'}
+>>> f'{w["name"]}: {w["url"]}'
+'Runoob: www.runoob.com'
+```
+
+在 Python 3.8 的版本中可以使用 **=** 符号来拼接运算表达式与结果：
+
+```py
+>>> x = 1
+>>> print(f'{x+1}')   # Python 3.6
+2
+
+>>> x = 1
+>>> print(f'{x+1=}')   # Python 3.8
+x+1=2
+```
 

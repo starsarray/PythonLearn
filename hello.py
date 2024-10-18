@@ -445,3 +445,23 @@ print((3 < 2) - (3 > 2))
 print((2 < 2) - (2 > 2))
 print(False - True)
 print(True - False)
+
+# 验证多行字符串的创建
+para_str = """这是一个多行字符串的实例
+多行字符串可以使用制表符
+TAB (\t)。
+也可以使用换行符 [ \n ]。\\n
+"""
+a = ('s'
+     '2'
+     '3')
+print(para_str)
+print(a)
+print(type(a))
+s = '''Hello, 
+world'''
+print(s)
+# 格式化输出
+x = 1
+print(f'{x+1}')
+print(f'{x+1=}')

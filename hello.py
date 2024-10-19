@@ -465,3 +465,19 @@ print(s)
 x = 1
 print(f'{x+1}')
 print(f'{x+1=}')
+
+def my_func(x,**y):
+    print(x)
+    print(y)
+my_func(1,a=2,b=3)
+
+def my_func(x,**y):
+    print(x)
+    for i in y:
+        print(y[i])
+my_func(2,a=2,b=3)
+
+def my_func(x,*,a,b):
+    print(x);print(a);print(b)
+
+my_func(3,a=2,b=3)

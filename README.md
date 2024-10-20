@@ -302,3 +302,75 @@ my_func(3,a=2,b=3)
 3
 ```
 
+### 匿名函数
+
+Python 使用 **lambda** 来创建匿名函数，**lambda**只是一个表达式
+
+语法：
+
+```py
+lambda [arg1 [,arg2,.....argn]]:expression
+```
+
+```py
+sum = lambda arg1, arg2: arg1 + arg2
+print ("相加后的值为 : ", sum( 10, 20 ))
+```
+
+lambda 函数通常与内置函数如 map()、filter() 和 reduce() 一起使用，以便在集合上执行操作。例如：
+
+## 强制位置参数
+
+Python3.8 新增了一个函数形参语法 `/` 用来指明`/`前的函数形参必须使用指定位置参数，不能使用关键字参数的形式
+
+在以下的例子中，形参 a 和 b 必须使用指定位置参数，c 或 d 可以是位置形参或关键字形参，而 e 和 f 要求为关键字形参:
+
+```py
+def f(a, b, /, c, d, *, e, f):
+    print(a, b, c, d, e, f)
+```
+
+```py
+f(10, 20, 30, d=40, e=50, f=60)
+```
+**位置参数必须在前，关键字参数必须在后**
+***
+
+## 装饰器
+
+装饰器是一种函数，它接受一个函数作为参数，并返回一个新的函数或修改原来的函数
+
+装饰器的语法使用 **`@`+装饰器名** 来应用在函数或方法上
+
+```py
+# 记录函数的执行时间
+import time
+
+def timer(func): # 定义装饰器timer
+    def wrapper(*args, **kwargs):
+        startTime = time.time()
+        res = func() # 开始执行函数func(),也就是传来的myFunction()
+        endTime = time.time()
+        print(f'执行时间：{endTime - startTime:.2f}秒') # 计算函数的执行时间
+        return res
+    return wrapper
+
+@ timer
+def myFunction():
+    time.sleep(1)
+    print('函数执行完毕')
+
+myFunction()
+```
+
+```py
+函数执行完毕
+执行时间：1.00秒
+```
+
+装饰器常用于有切面需求的场景，比如：插入日志、性能测试、事务处理、缓存、权限校验等场景
+
+***
+
+
+

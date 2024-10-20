@@ -480,4 +480,45 @@ my_func(2,a=2,b=3)
 def my_func(x,*,a,b):
     print(x);print(a);print(b)
 
+# 位置参数必须在前，关键字参数必须在后
 my_func(3,a=2,b=3)
+def f(a, b, /, c, d, *, e, f):
+    print(a, b, c, d, e, f)
+
+f(10, 20, 30, d=40, e=50, f=60)
+
+# 匿名函数 lambda
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # 输出: [1, 4, 9, 16, 25]
+
+# 装饰器
+# 记录函数的执行时间
+import time
+
+def timer(func): # 定义装饰器timer
+    def wrapper(*args, **kwargs):
+        startTime = time.time()
+        res = func() # 开始执行函数func(),也就是传来的myFunction()
+        endTime = time.time()
+        print(f'执行时间：{endTime - startTime:.2f}秒') # 计算函数的执行时间
+        return res
+    return wrapper
+
+@ timer
+def myFunction():
+    time.sleep(.1)
+    print('函数执行完毕')
+
+myFunction()
+# 为类添加一个name的属性
+def addName(cls):
+    cls.name = 'MyClass' # 为类添加属性并赋值
+    return cls
+
+@ addName
+class MyClass:
+    pass
+
+print(MyClass.name)
+

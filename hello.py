@@ -522,3 +522,27 @@ class MyClass:
 
 print(MyClass.name)
 
+# 数据结构
+# 列表当做栈使用
+stack = [1, 2, 3, 4, 5]
+stack.append(6)
+stack.pop()
+print(stack)
+# 列表当做队列使用
+queue = [1, 2, 3, 4, 5]
+queue.append(6)
+queue.pop(0)
+print(queue)
+from collections import deque
+# 创建一个空队列
+queue = deque()
+# 向队尾添加元素
+queue.append('a')
+queue.append('b')
+print("队列状态:", queue)  # 输出: 队列状态: deque(['a', 'b', 'c'])
+first_element = queue.popleft()# 从队首移除元素
+print("移除的元素:", first_element)  # 输出: 移除的元素: a
+print("队列状态:", queue)            # 输出: 队列状态: deque(['b', 'c'])
+# 列表当做堆栈使用
+
+

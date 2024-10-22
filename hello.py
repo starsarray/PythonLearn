@@ -576,3 +576,44 @@ for q, a in zip(questions, answers):
 
 for i, v in enumerate(['tic', 'tac', 'toe']):
     print(i,v)
+
+# 输出
+print("你们好，{1}与{0}!".format("Star","Sun"))
+
+import math
+print('常量 PI 的值近似为 {0:.3f}。'.format(math.pi))
+print('常量 PI 的值近似为：%5.3f 和 %6.4f。' % (math.pi ,math.pi))
+
+# 输入
+# str = input("请输入：")
+# print("你输入的内容是：", str)
+
+# pickle 序列化
+import pickle,pprint
+# 使用pickle模块将数据对象保存到文件
+data1 = {'a': [1, 2.0, 3, 4+6j],
+         'b': ('string', u'Unicode string'),
+         'c': None}
+selfref_list = [1, 2, 3]
+selfref_list.append(selfref_list)
+output = open('data.pkl', 'wb')
+# Pickle dictionary using protocol 0.
+pickle.dump(data1, output)
+# Pickle the list using the highest protocol available.
+pickle.dump(selfref_list, output, -1)
+output.close()
+#使用pickle模块从文件中重构python对象
+pkl_file = open('data.pkl', 'rb')
+data1 = pickle.load(pkl_file)
+pprint.pprint(data1)
+data2 = pickle.load(pkl_file)
+pprint.pprint(data2)
+pkl_file.close()
+
+# 异常处理
+# x = 10
+# if x > 5:
+#     raise Exception('x 不能大于 5。x 的值为: {}'.format(x))
+
+
+

@@ -445,3 +445,160 @@ What is your quest?  It is the holy grail.
 What is your favorite color?  It is blue.
 ```
 
+***
+
+## 模块
+
+- 目录只有包含一个叫做 __init__.py 的文件才会被认作是一个包
+- 如果包定义文件 **__init__.py** 存在一个叫做 **__all__** 的列表变量，那么在使用 **from package import \*** 的时候就把这个列表中的所有名字作为包内容导入
+- 更新包之后要保证 **__all__** 也更新
+- 推荐用**from Package import specific_submodule**这种方法
+- 主模块的名字永远是"__main__"
+
+***
+
+## 输入输出
+
+### 输出
+
+将输出的值转成字符串
+
+- **str()：** 函数返回一个用户易读的表达形式
+- **repr()：** 产生一个解释器易读的表达形式
+
+```py
+>>> s = 'Hello, Runoob'
+>>> str(s)
+'Hello, Runoob'
+>>> repr(s)
+"'Hello, Runoob'"
+>>> str(1/7)
+'0.14285714285714285'
+>>> x = 10 * 3.25
+>>> y = 200 * 200
+>>> s = 'x 的值为： ' + repr(x) + ',  y 的值为：' + repr(y) + '...'
+>>> print(s)
+x 的值为： 32.5,  y 的值为：40000...
+>>> #  repr() 函数可以转义字符串中的特殊字符
+... hello = 'hello, runoob\n'
+>>> hellos = repr(hello)
+>>> print(hellos)
+'hello, runoob\n'
+>>> # repr() 的参数可以是 Python 的任何对象
+... repr((x, y, ('Google', 'Runoob')))
+"(32.5, 40000, ('Google', 'Runoob'))"
+```
+
+####  `str.format() `可使输出的形式更加多样
+
+位置及关键字参数可以任意的结合:
+
+```py
+>>> print('站点列表 {0}, {1}, 和 {other}。'.format('Google', 'Runoob', other='Taobao'))
+站点列表 Google, Runoob, 和 Taobao。
+```
+
+**!a** (使用 **ascii()**), **!s** (使用 **str()**) 和 **!r** (使用 **repr()**) 可以用于在格式化某个值之前对其进行转化:
+
+```py
+>>> import math
+>>> print('常量 PI 的值近似为： {}。'.format(math.pi))
+常量 PI 的值近似为： 3.141592653589793。
+>>> print('常量 PI 的值近似为： {!r}。'.format(math.pi))
+常量 PI 的值近似为： 3.141592653589793。
+```
+
+在` :` 后传入一个整数, 可以保证该域至少有这么多的宽度
+
+在` :` 后传入`.nf`，则表示保留n位小数，f为浮点型
+
+#### `%`（将被淘汰）
+
+```py
+>>> print('常量 PI 的值近似为：%5.3f 和 %6.4f。' % (math.pi ,math.pi))
+常量 PI 的值近似为：3.142 和 3.1416。
+```
+
+### 输入
+
+#### 读取键盘输入`input()`
+
+```py
+str = input("请输入：")
+```
+
+#### 读和写文件
+
+只能保存字符串，其他格式需要先转化成字符串
+
+```py
+# 打开一个文件
+f = open("/tmp/foo.txt", "w") #只写 文件若存在，从头编辑，反之创建文件
+f.write( "Python 是一个非常好的语言。\n是的，的确非常好!!\n" )
+# 关闭打开的文件
+f.close()
+# 打开一个文件
+f = open("/tmp/foo.txt", "r") #只读
+str = f.read()
+print(str)
+# 关闭打开的文件
+f.close()
+```
+
+### pickle 模块
+
+python的pickle模块实现了基本的数据序列和反序列化，够将程序中运行的对象信息保存到文件中去，永久存储
+
+基本接口：
+
+```py
+pickle.dump(obj, file, [,protocol])
+```
+
+```py
+import pickle,pprint
+# 使用pickle模块将数据对象保存到文件
+data1 = {'a': [1, 2.0, 3, 4+6j],
+         'b': ('string', u'Unicode string'),
+         'c': None}
+selfref_list = [1, 2, 3]
+selfref_list.append(selfref_list) # 引用自身，会无限递归
+output = open('data.pkl', 'wb')
+# Pickle dictionary using protocol 0.
+pickle.dump(data1, output)
+# Pickle the list using the highest protocol available.
+pickle.dump(selfref_list, output, -1)
+output.close()
+#使用pickle模块从文件中重构python对象
+pkl_file = open('data.pkl', 'rb')
+data1 = pickle.load(pkl_file)
+pprint.pprint(data1)
+data2 = pickle.load(pkl_file)
+pprint.pprint(data2)
+pkl_file.close()
+```
+
+```py
+{'a': [1, 2.0, 3, (4+6j)], 'b': ('string', 'Unicode string'), 'c': None}
+[1, 2, 3, <Recursion on list with id=2210685513920>]
+```
+
+***
+
+## 错误与异常
+
+![img](https://www.runoob.com/wp-content/uploads/2019/07/try_except_else_finally.png)
+
+### 预定义的清理行为
+
+一些对象定义了标准的清理行为，无论系统是否成功的使用了它，一旦不需要它了，那么这个标准的清理行为就会执行
+
+`with`  `as`
+
+```py
+with open("myfile.txt") as f:
+    for line in f:
+        print(line, end="")
+```
+
+以上这段代码执行完毕后，就算在处理过程中出问题了，文件 f 总是会关闭

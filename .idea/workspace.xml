@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="学习函数里的位置参数、匿名函数、装饰器">
+    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="学习数据结构中的列表">
+      <change afterPath="$PROJECT_DIR$/仓库规划/WarehousePlanning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/仓库规划/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello.py" afterDir="false" />
@@ -13,6 +15,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +42,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2nFX7SlqbPkAHnZaTbTIDUZLwTb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,6 +63,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Star\PycharmProjects\Hello\仓库规划" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -185,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729412427536</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="学习数据结构中的列表">
+      <option name="closed" value="true" />
+      <created>1729526333891</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729526333891</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +240,8 @@
     <MESSAGE value="学习函数" />
     <MESSAGE value="添加列表、元组、集合、字典、推导式、迭代器、生成器、函数学习笔记" />
     <MESSAGE value="学习函数里的位置参数、匿名函数、装饰器" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习函数里的位置参数、匿名函数、装饰器" />
+    <MESSAGE value="学习数据结构中的列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习数据结构中的列表" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hello$hello.coverage" NAME="hello 覆盖结果" MODIFIED="1728569827862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

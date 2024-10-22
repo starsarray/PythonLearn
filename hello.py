@@ -543,6 +543,36 @@ print("队列状态:", queue)  # 输出: 队列状态: deque(['a', 'b', 'c'])
 first_element = queue.popleft()# 从队首移除元素
 print("移除的元素:", first_element)  # 输出: 移除的元素: a
 print("队列状态:", queue)            # 输出: 队列状态: deque(['b', 'c'])
-# 列表当做堆栈使用
 
+# 嵌套列表推导式
+matrix = [
+     [1, 2, 3, 4],
+     [5, 6, 7, 8],
+     [9, 10, 11, 12],
+]
+a=[[row[i] for row in matrix] for i in range(4)]
+print(a)
 
+# 字典运用
+tel = {'jack': 4098, 'sape': 4139}
+print(tel)
+print(tel.keys())
+print(tel.values())
+print(tel.items())
+print(list(tel.keys()))
+print(list(tel.values()))
+print(list(tel.items()))
+print('jack' in tel)
+print(tel.get('jack'))
+print(4098 in tel)
+
+a = dict(sape=4139, guido=4127, jack=4098)
+print(a)
+
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
+
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i,v)

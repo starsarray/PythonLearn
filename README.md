@@ -199,6 +199,8 @@ x+1=2
 
 ### 推导式
 
+列表推导式外面是`[]`，集合推导式外面是`{}`，元组推导式外面是`()`
+
 ```py
 [变量表达式 for 变量 in 序列] 
 或者 
@@ -405,4 +407,41 @@ first_element = queue.popleft()# 从队首移除元素
 print("移除的元素:", first_element)  # 输出: 移除的元素: a
 print("队列状态:", queue)            # 输出: 队列状态: deque(['b'])
 ~~~
+
+### 遍历技巧
+
+在字典中遍历时，关键字和对应的值可以使用 items() 方法同时解读出来：
+
+```py
+>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+>>> for k, v in knights.items():
+...     print(k, v)
+...
+gallahad the pure
+robin the brave
+```
+
+在序列中遍历时，索引位置和对应值可以使用 enumerate() 函数同时得到：
+
+```py
+>>> for i, v in enumerate(['tic', 'tac', 'toe']):
+...     print(i, v)
+...
+0 tic
+1 tac
+2 toe
+```
+
+同时遍历两个或更多的序列，可以使用 zip() 组合：
+
+```py
+>>> questions = ['name', 'quest', 'favorite color']
+>>> answers = ['lancelot', 'the holy grail', 'blue']
+>>> for q, a in zip(questions, answers):
+...     print('What is your {0}?  It is {1}.'.format(q, a))
+...
+What is your name?  It is lancelot.
+What is your quest?  It is the holy grail.
+What is your favorite color?  It is blue.
+```
 

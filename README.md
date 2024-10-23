@@ -602,3 +602,69 @@ with open("myfile.txt") as f:
 ```
 
 以上这段代码执行完毕后，就算在处理过程中出问题了，文件 f 总是会关闭
+
+***
+
+## 面相对象
+
+### 类方法
+
+- 类有一个名为 __init__() 的特殊方法（**构造方法**），该方法在类实例化时会自动调用
+- 类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的**第一个参数名称**, 按照惯例它的名称是 self
+
+### 继承
+
+```py
+#多继承
+class sample(speaker,student):
+```
+
+### 方法重写
+
+如果父类方法的功能不能满足需求，可以在子类重写父类的方法
+
+```py
+class Parent:        # 定义父类
+   def myMethod(self):
+      print ('调用父类方法')
+ 
+class Child(Parent): # 定义子类
+   def myMethod(self):
+      print ('调用子类方法')
+ 
+c = Child()          # 子类实例
+c.myMethod()         # 子类调用重写方法
+super(Child,c).myMethod() #用子类对象调用父类已被覆盖的方法
+```
+
+```py
+调用子类方法
+调用父类方法
+```
+
+***
+
+## 命名空间
+
+- **内置名称（built-in names**）， Python 语言内置的名称，比如函数名 abs、char 和异常名称 BaseException、Exception 等等
+- **全局名称（global names）**，模块中定义的名称，记录了模块的变量，包括函数、类、其它导入的模块、模块级的变量和常量
+- **局部名称（local names）**，函数中定义的名称，记录了函数的变量，包括函数的参数和局部定义的变量。（类中定义的也是）
+
+![img](https://www.runoob.com/wp-content/uploads/2014/05/types_namespace-1.png)
+
+## 作用域
+
+- **L（Local）**：最内层，包含局部变量，比如一个函数/方法内部
+- **E（Enclosing）**：包含了非局部(non-local)也非全局(non-global)的变量。比如两个嵌套函数，一个函数（或类） A 里面又包含了一个函数 B ，那么对于 B 中的名称来说 A 中的作用域就为 nonlocal
+- **G（Global）**：当前脚本的最外层，比如当前模块的全局变量
+- **B（Built-in）**： 包含了内建的变量/关键字等，最后被搜索
+
+![img](https://www.runoob.com/wp-content/uploads/2014/05/1418490-20180906153626089-1835444372.png)
+
+### global 和 nonlocal关键字
+
+当内部作用域想修改外部作用域的变量时，就要用到 global 和 nonlocal 关键字
+
+***
+
+## 

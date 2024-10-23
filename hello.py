@@ -614,6 +614,10 @@ pkl_file.close()
 # x = 10
 # if x > 5:
 #     raise Exception('x 不能大于 5。x 的值为: {}'.format(x))
-
+print('程序执行完毕')
+def main():
+    print('hello')
+if __name__ == '__main__':
+    main()
 
 

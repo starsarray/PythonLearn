@@ -619,5 +619,8 @@ def main():
     print('hello')
 if __name__ == '__main__':
     main()
-
+a = 12
+b = 2
+print(a%b)
+print(a//b)
 

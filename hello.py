@@ -619,8 +619,30 @@ def main():
     print('hello')
 if __name__ == '__main__':
     main()
-a = 12
-b = 2
-print(a%b)
-print(a//b)
+# a = 12
+# b = 2
+# print(a%b)
+# print(a//b)
 
+nums = [1, 2, 3, 1, 1,3]
+for inx, i in enumerate(nums):
+    print(nums[inx+1:].count(i))
+
+# 假设二维列表如下
+two_dimensional_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# 使用列表推导式转换为一维列表
+one_dimensional_list = [item for sublist in two_dimensional_list for item in sublist]
+print(one_dimensional_list)
+# 使用itertools.chain转换为一维列表
+import itertools
+one_dimensional_list = list(itertools.chain(*two_dimensional_list))
+
+print(one_dimensional_list)
+# import numpy as np
+# # 将列表转换为numpy数组
+# array = np.array(two_dimensional_list)
+# # 使用reshape方法转换为一维数组
+# one_dimensional_array = array.reshape(-1)
+# # 将numpy数组转换回列表
+# one_dimensional_list = one_dimensional_array.tolist()
+# print(one_dimensional_list)

@@ -34,7 +34,7 @@ Python学习之旅
 多行注释可以用多个 `# `，还有` '''` 和`"""`
 ### 多行语句
 Python 允许使用反斜杠`\`将一行代码分为多行
-Python 可以在同一行中使用多条语句，语句之间使用分号 ; 分割
+Python 可以在同一行中使用多条语句，语句之间使用分号` ;` 分割
 
 ### print输出
 
@@ -45,13 +45,13 @@ print( "Hello", end="" ) # 不换行输出
 ### import 与 from...import
 在 python 用 import 或者 from...import 来导入相应的模块。
 
-- 将整个模块(somemodule)导入，格式为： import somemodule
+- 将整个模块(somemodule)导入，格式为： `import somemodule`
 
-- 从某个模块中导入某个函数,格式为： from somemodule import somefunction
+- 从某个模块中导入某个函数,格式为： `from somemodule import somefunction`
 
-- 从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc
+- 从某个模块中导入多个函数,格式为： `from somemodule import firstfunc, secondfunc, thirdfunc`
 
-- 将某个模块中的全部函数导入，格式为： from somemodule import *
+- 将某个模块中的全部函数导入，格式为： `from somemodule import *`
 ---
 ## 数据类型
 在Python中变量没有类型，它是动态语言，不需要声明变量的类型。
@@ -214,7 +214,7 @@ x+1=2
 ## 元组
 - 用`()`表示
 - 元组**不可变**
-- 元组中只包含一个元素时，需要在元素后面**添加逗号** **,** ，否则括号会被当作运算符使用
+- 元组中只包含一个元素时，需要在元素后面**添加逗号** ，否则括号会被当作运算符使用
 ***
 ## 字典
 - 用`{}`表示，里面是键值对的形式
@@ -246,7 +246,7 @@ x+1=2
 
 ##  迭代器
 
-通过 `next()` 函数逐步获取数据，而不是一次性将所有数据加载到内存中。这对于处理大数据集非常有用
+通过 `next()` 函数逐步获取数据，而不是一次性将所有数据加载到内存中，这对于处理大数据集非常有用
 
 ```py
 >>> list=[1,2,3,4]
@@ -484,10 +484,10 @@ What is your favorite color?  It is blue.
 
 ## 模块
 
-- 目录只有包含一个叫做 __init__.py 的文件才会被认作是一个包
-- 如果包定义文件 **__init__.py** 存在一个叫做 **__all__** 的列表变量，那么在使用 **from package import \*** 的时候就把这个列表中的所有名字作为包内容导入
+- 目录只有包含一个叫做 **init.py** 的文件才会被认作是一个包
+- 如果包定义文件 **__init__.py** 存在一个叫做 **__all__** 的列表变量，那么在使用 **`from package import \*`** 的时候就把这个列表中的所有名字作为包内容导入
 - 更新包之后要保证 **__all__** 也更新
-- 推荐用**from Package import specific_submodule**这种方法
+- 推荐用**`from Package import specific_submodule`**这种方法
 - 主模块的名字永远是"__main__"
 
 ***
@@ -658,7 +658,7 @@ with open("myfile.txt") as f:
 
 ### 类方法
 
-- 类有一个名为 __init__() 的特殊方法（**构造方法**），该方法在类实例化时会自动调用
+- 类有一个名为 `init() `的特殊方法（**构造方法**），该方法在类实例化时会自动调用
 - 类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的**第一个参数名称**, 按照惯例它的名称是 self
 
 ### 继承
@@ -716,4 +716,3 @@ super(Child,c).myMethod() #用子类对象调用父类已被覆盖的方法
 
 ***
 
-## 

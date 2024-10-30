@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="CSP-重复局面">
-      <change afterPath="$PROJECT_DIR$/CSP认证/矩阵运算/MatrixOperation.py" afterDir="false" />
+    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="CSP-训练计划">
+      <change afterPath="$PROJECT_DIR$/CSP认证/如此编码/SuchEncoding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSP认证/序列查询/SequenceQuery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,9 +52,15 @@
     "Python.CoordinateTransformation1.executor": "Run",
     "Python.CoordinateTransformation2.executor": "Run",
     "Python.FactorSimplification.executor": "Run",
+    "Python.FieldMeasurement.executor": "Run",
     "Python.MatrixOperation.executor": "Run",
+    "Python.NetPresentValue.executor": "Run",
+    "Python.ReclamationPlan.executor": "Run",
     "Python.RepetitiveSituation.executor": "Run",
     "Python.SearchTree.executor": "Run",
+    "Python.SequenceQuery.executor": "Run",
+    "Python.SuchEncoding.executor": "Run",
+    "Python.TrainingPlan.executor": "Run",
     "Python.WarehousePlanning.executor": "Run",
     "Python.hello.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -342,7 +349,47 @@
       <option name="project" value="LOCAL" />
       <updated>1730031354051</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="CSP-矩阵运算">
+      <option name="closed" value="true" />
+      <created>1730044121595</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1730044121595</updated>
+    </task>
+    <task id="LOCAL-00028" summary="CSP-现值计算">
+      <option name="closed" value="true" />
+      <created>1730214953738</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730214953738</updated>
+    </task>
+    <task id="LOCAL-00029" summary="CSP-土地丈量">
+      <option name="closed" value="true" />
+      <created>1730214977311</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730214977311</updated>
+    </task>
+    <task id="LOCAL-00030" summary="CSP-垦田计划">
+      <option name="closed" value="true" />
+      <created>1730214998013</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730214998013</updated>
+    </task>
+    <task id="LOCAL-00031" summary="CSP-训练计划">
+      <option name="closed" value="true" />
+      <created>1730215009481</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730215009481</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,11 +407,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="浅学习字符串处理、运算符、注释、条件语句、异常处理、函数、类" />
-    <MESSAGE value="浅学习列表、元祖、字典" />
-    <MESSAGE value="浅学习集合" />
-    <MESSAGE value="浅学习循环语句" />
-    <MESSAGE value="浅学习推导式" />
     <MESSAGE value="浅学习迭代器、生成式" />
     <MESSAGE value="验证不可变类型&#10;数字比较大小" />
     <MESSAGE value="上传笔记" />
@@ -385,7 +427,12 @@
     <MESSAGE value="CSP-坐标转换（一）（二）" />
     <MESSAGE value="CSP-树上搜索写成了二叉树，但实际是多叉树。" />
     <MESSAGE value="CSP-重复局面" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSP-重复局面" />
+    <MESSAGE value="CSP-矩阵运算" />
+    <MESSAGE value="CSP-现值计算" />
+    <MESSAGE value="CSP-土地丈量" />
+    <MESSAGE value="CSP-垦田计划" />
+    <MESSAGE value="CSP-训练计划" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSP-训练计划" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hello$hello.coverage" NAME="hello 覆盖结果" MODIFIED="1728569827862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

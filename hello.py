@@ -646,3 +646,12 @@ print(one_dimensional_list)
 # # 将numpy数组转换回列表
 # one_dimensional_list = one_dimensional_array.tolist()
 # print(one_dimensional_list)
+6 2 10
+5 24
+10 24
+11 24
+34 24
+35 24
+35 48
+1
+2

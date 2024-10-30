@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="CSP-训练计划">
-      <change afterPath="$PROJECT_DIR$/CSP认证/如此编码/SuchEncoding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSP认证/序列查询/SequenceQuery.py" afterDir="false" />
+    <list default="true" id="6de2f406-8596-4a23-82e0-30968b21e578" name="更改" comment="CSP-未初始化警告">
+      <change afterPath="$PROJECT_DIR$/CSP认证/出行计划/TravelPlan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +53,19 @@
     "Python.CoordinateTransformation2.executor": "Run",
     "Python.FactorSimplification.executor": "Run",
     "Python.FieldMeasurement.executor": "Run",
+    "Python.HowToFreeShipping.executor": "Run",
     "Python.MatrixOperation.executor": "Run",
     "Python.NetPresentValue.executor": "Run",
+    "Python.NormalizationProcessing.executor": "Run",
     "Python.ReclamationPlan.executor": "Run",
     "Python.RepetitiveSituation.executor": "Run",
     "Python.SearchTree.executor": "Run",
     "Python.SequenceQuery.executor": "Run",
     "Python.SuchEncoding.executor": "Run",
     "Python.TrainingPlan.executor": "Run",
+    "Python.TravelPlan.executor": "Run",
+    "Python.TreasureHuntAdventure.executor": "Run",
+    "Python.UninitializedWarning.executor": "Run",
     "Python.WarehousePlanning.executor": "Run",
     "Python.hello.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -389,7 +394,55 @@
       <option name="project" value="LOCAL" />
       <updated>1730215009481</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="CSP-序列查询">
+      <option name="closed" value="true" />
+      <created>1730251835423</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730251835423</updated>
+    </task>
+    <task id="LOCAL-00033" summary="CSP-如此编码">
+      <option name="closed" value="true" />
+      <created>1730251858861</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730251858861</updated>
+    </task>
+    <task id="LOCAL-00034" summary="CSP-何以包邮">
+      <option name="closed" value="true" />
+      <created>1730278423212</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730278423212</updated>
+    </task>
+    <task id="LOCAL-00035" summary="CSP-归一化处理">
+      <option name="closed" value="true" />
+      <created>1730278446228</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1730278446228</updated>
+    </task>
+    <task id="LOCAL-00036" summary="CSP-寻宝大冒险">
+      <option name="closed" value="true" />
+      <created>1730278461442</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730278461442</updated>
+    </task>
+    <task id="LOCAL-00037" summary="CSP-未初始化警告">
+      <option name="closed" value="true" />
+      <created>1730298284028</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1730298284028</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,12 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="浅学习迭代器、生成式" />
-    <MESSAGE value="验证不可变类型&#10;数字比较大小" />
-    <MESSAGE value="上传笔记" />
-    <MESSAGE value="学习字符串格式化" />
-    <MESSAGE value="学习函数" />
-    <MESSAGE value="添加列表、元组、集合、字典、推导式、迭代器、生成器、函数学习笔记" />
     <MESSAGE value="学习函数里的位置参数、匿名函数、装饰器" />
     <MESSAGE value="学习数据结构中的列表" />
     <MESSAGE value="学习数据结构中的遍历技巧以及对字典的运用" />
@@ -432,7 +479,13 @@
     <MESSAGE value="CSP-土地丈量" />
     <MESSAGE value="CSP-垦田计划" />
     <MESSAGE value="CSP-训练计划" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSP-训练计划" />
+    <MESSAGE value="CSP-序列查询" />
+    <MESSAGE value="CSP-如此编码" />
+    <MESSAGE value="CSP-何以包邮" />
+    <MESSAGE value="CSP-归一化处理" />
+    <MESSAGE value="CSP-寻宝大冒险" />
+    <MESSAGE value="CSP-未初始化警告" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSP-未初始化警告" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hello$hello.coverage" NAME="hello 覆盖结果" MODIFIED="1728569827862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
